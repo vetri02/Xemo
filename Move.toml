@@ -1,0 +1,9 @@
+[package]
+name = "XemoToken"
+version = "0.0.1"
+
+[dependencies]
+AptosTokenObjects = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-token-objects", rev = "mainnet" }
+
+[addresses]
+my_address = "0x306009b909107db9e828cf90bd5b659747e275d81b2922ec81d6fb81c5a7388e"

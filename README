@@ -1,0 +1,40 @@
+# XemoToken
+
+XemoToken is a Move-based token project designed to demonstrate the capabilities of the Aptos blockchain. This project includes a set of tests to ensure the correct functionality of the token, including minting, transferring, and burning tokens.
+
+
+## Installation
+
+To get started with XemoToken, you need to have the Aptos CLI installed. Follow the instructions below to install the CLI and set up the project.
+
+### Install Aptos CLI
+
+1. **Download the Aptos CLI**:
+   - For macOS:
+     ```sh
+     brew install aptos
+     ```
+   - For Linux:
+     ```sh
+     wget https://github.com/aptos-labs/aptos-core/releases/download/latest/aptos-cli-ubuntu-latest.zip
+     unzip aptos-cli-ubuntu-latest.zip -d /usr/local/bin
+     ```
+   - For Windows:
+     Download the latest release from the [Aptos GitHub Releases](https://github.com/aptos-labs/aptos-core/releases) and add it to your PATH.
+
+2. **Verify the installation**:
+   ```sh
+   aptos --version
+   ```
+
+### Clone the Repository
+
+Clone the XemoToken repository to your local machine:
+
+aptos move compile
+aptos move test
+aptos move publish
+
+### Run
+aptos move run --function-id 'my_address::Xemo::mint' --args 'u64:<AMOUNT>'
+aptos move run --function-id 'my_address::Xemo::transfer' --args 'address:<RECIPIENT_ADDRESS>' 'u64:<AMOUNT>'
